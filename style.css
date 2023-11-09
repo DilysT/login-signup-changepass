@@ -1,0 +1,167 @@
+html {
+    height: 100%;
+  }
+  body { /*background css*/
+    margin-top: 161px;
+    margin-right: 560px;
+    font-family: sans-serif;
+    background: linear-gradient(91deg, #405BE2 -2.6%, #862CE4 52.66%, #D921E9 106.77%);
+  }
+  
+  .login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background:#fff;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(21, 21, 21, 0.322);
+    border-radius: 24px;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  } /* Cố định chữ username&pass*/
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px; /* chỉnh khoảng trắng trong box email+pass*/
+    font-size: 18px; /*chỉnh kích cỡ box user&pass*/
+    color: rgb(22, 22, 22); /*chỉnh màu chữ */
+    margin-bottom: 60px;/* khoảng cách giữa hai box user & pass*/
+    background: white;
+    border-radius: 6px;
+    border-color: rgba(228, 227, 227, 0.893)
+  }
+  /* chỉnh vị trí và kích cỡ chữ user name+ password*/
+  .login-box .user-box label {
+    position: absolute;
+    left: -20px; 
+    padding: 12px ;
+    font-size: 10px;
+    color: black;
+    pointer-events: none;
+  }
+  
+  /* tạo hiệu ứng CHỮ user+pass chạy lên trên*/
+  .login-box .user-box label{
+    top: -20px; /* chỉnh vị trí chữ email& pass*/
+    left: -10px;
+    color: var(--Dark-Gray, #2C2C2C);
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: bolder;
+    
+  }
+  .login-box .user-box{
+    padding-right: 10px;
+  margin-bottom: -40px;
+  padding-top: 12px;
+  }
+
+  /* chỉnh chữ login*/
+  .login-box form a{
+    position: relative;
+    display: inline-block;
+    padding-left: 138px;
+    padding-right:138px;
+    padding-top: 13px;
+    padding-bottom: 14px;
+    margin-top: 52px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 21px;
+    text-decoration: none;
+    letter-spacing: 2px;
+        background: linear-gradient(91deg, #405BE2 -2.6%, #862CE4 52.66%, #D921E9 106.77%);
+        border-radius: 8px ;
+  }
+  
+  .login-box a:hover {
+    background: linear-gradient(91deg, #3552e1 -2.6%, #8e34ef 52.66%, #ec2ffd 106.77%);
+    border-radius: 8px ;;
+    color: #ffffffa5;
+  }
+  
+ .header {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+font-size: 26px;
+font-family: Arial, Helvetica, sans-serif;
+margin-top: -40px;
+margin-bottom: 50px;
+}
+
+/*Tạo khung tick remember me*/
+
+.remember-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.remember-checkbox label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 20px;
+  padding-top: 0.75px;
+}
+/*chỉnh khung check box*/
+.remember-checkbox label:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  width: 12px;
+  height: 12.5px;
+  border: 0.1px solid #000;
+  background: linear-gradient(91deg, #405BE2 -2.6%, #862CE4 52.66%, #D921E9 106.77%);
+  border-radius: 8px ;;
+  border-radius: 3px;
+  
+  
+  }
+  /*chỉnh vị trí, size dấu tick*/
+  .remember-checkbox label:after {
+  content: '\2714'; /* Unicode character for checkmark */
+  position: absolute;
+  left: 2.2px;
+  font-size: 15px;
+  color: transparent;
+  top: -0.7px;
+
+  }
+  
+  .remember-checkbox input[type="checkbox"]:checked + label:after {
+  color: white; /* Color of the checkmark when checkbox is checked */
+  }
+  
+.forget {
+  display: flex;
+  align-items:flex-end;
+  justify-content: flex-end;
+  margin-right: -12px;
+  margin-top:-16px;
+  color: var(--Medium-Gray, #999);
+  font-size: 14px;
+  cursor: pointer;
+}
+.account{
+  margin-top: 20px;
+  margin-left: 32px;
+}
+.signup{
+  display: flex;
+  align-items:flex-end;
+  justify-content: flex-end;
+  margin-top: -19px;
+  margin-right: 62px;
+  background: linear-gradient(91deg, #405BE2 60.97%, #D921E9 106.48%);
+background-clip: text;
+-webkit-background-clip: text;
+text-decoration-line: underline;
+cursor: pointer;
+}
+

@@ -1,0 +1,105 @@
+html {
+    height: 100%;
+  }
+  body { /*background css*/
+    margin-top: 161px;
+    margin-right: 560px;
+    font-family: sans-serif;
+    background: linear-gradient(91deg, #405BE2 -2.6%, #862CE4 52.66%, #D921E9 106.77%);
+  }
+  
+  .login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background:#fff;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(21, 21, 21, 0.322);
+    border-radius: 24px;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  } /* Cố định chữ username&pass*/
+  
+  .login-box .user-box input {
+    padding-top: 13px; /* chỉnh khoảng trắng trong box email+pass*/
+    padding-left: 16px;
+    padding-bottom: 14px;
+    padding-right: 86px;
+    font-size: 18px; /*chỉnh kích cỡ box user&pass*/
+    color: rgb(44, 42, 42); /*chỉnh màu chữ */
+    margin-bottom: 70px;/* khoảng cách giữa hai box user & pass*/
+    background: white;
+    border-radius: 8px;
+    border-color: rgba(91, 91, 91, 0.52);
+  }
+  /* chỉnh vị trí và kích cỡ chữ user name+ password*/
+  .login-box .user-box label {
+    width: 321px;
+    position: absolute;
+    left: -20px; 
+    padding: 12px ;
+    font-size: 14px;
+    color: var(--Dark-Gray, #2C2C2C);
+    line-height: 18px;
+    top: -24px; /* chỉnh vị trí chữ email& pass*/
+    left: -10px;
+    color: var(--Dark-Gray, #2C2C2C);
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  
+  /* tạo hiệu ứng CHỮ user+pass chạy lên trên*/
+  
+  .login-box .user-box{
+  margin-bottom: -40px;
+  padding-top: 12px;
+  margin-right: -20px;
+  }
+
+  /* chỉnh chữ login*/
+  .login-box form a{
+    position: relative;
+    display: inline-block;
+    width: 321px;
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-top: 10px;
+    margin-bottom: 18px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 21px;
+    text-decoration: none;
+  font-weight: 600;
+        background: linear-gradient(91deg, #405BE2 -2.6%, #862CE4 52.66%, #D921E9 106.77%);
+        border-radius: 8px ;
+  }
+  
+  .login-box a:hover {
+    background: linear-gradient(91deg, #3552e1 -2.6%, #8e34ef 52.66%, #ec2ffd 106.77%);
+    border-radius: 8px ;;
+    color: #ffffffa5;
+  }
+  
+ .header {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+font-family: Arial, Helvetica, sans-serif;
+margin-top: -40px;
+margin-bottom: 40px;
+color: var(--Dark-Gray, #2C2C2C);
+font-size: 26px;
+font-style: normal;
+font-weight: 700;
+line-height: 34px;
+}
+
